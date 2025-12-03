@@ -1,0 +1,10 @@
+<h1>Are you sure you want to delete this appointment?</h1>
+
+<p>{{ appointment }}</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Yes, Delete</button>
+</form>
+
+<a href="{% url 'appointment_list' %}">Cancel</a>

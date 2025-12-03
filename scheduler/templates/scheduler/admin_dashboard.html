@@ -1,0 +1,24 @@
+{% extends 'scheduler/base.html' %}
+{% block content %}
+<h1 class="mb-4">Welcome, Admin!</h1>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card text-white bg-success mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Appointments</h5>
+        <p class="card-text">View and manage all appointments.</p>
+        <a href="{% url 'appointment_list' %}" class="btn btn-light">View Appointments</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card text-white bg-info mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Users</h5>
+        <p class="card-text">Manage owners and doctors.</p>
+        <a href="#" class="btn btn-light">Manage Users</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

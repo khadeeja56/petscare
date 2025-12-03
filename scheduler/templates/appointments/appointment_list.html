@@ -1,0 +1,13 @@
+<h1>All Appointments</h1>
+
+<a href="{% url 'create_appointment' %}">Create New Appointment</a>
+
+<ul>
+    {% for a in appointments %}
+        <li>
+            {{ a.owner }} - {{ a.pet }} ({{ a.date }})
+            <a href="{% url 'edit_appointment' a.id %}">Edit</a>
+            <a href="{% url 'delete_appointment' a.id %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>

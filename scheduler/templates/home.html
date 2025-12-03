@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Home - Vetsched{% endblock %}
+{% block content %}
+<div class="p-5 bg-light rounded">
+  <h1>Welcome to Vetsched</h1>
+  <p class="lead">Professional appointment scheduling demo.</p>
+  <p><a class="btn btn-primary" href="{% url 'login' %}">Login</a></p>
+</div>
+{% endblock %}
